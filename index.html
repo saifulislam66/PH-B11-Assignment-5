@@ -5,11 +5,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment5</title>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+  <body>
+    <nav class="container mx-auto">
+      <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-xl">
+            <img class="w-10" src="./assets/logo.png" alt="" />
+            <h4 class="font-bold text-3xl">
+              <span class="font-normal">Dev</span>Board
+            </h4></a
+          >
+        </div>
+        <div class="flex-none">
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <div class="indicator">
+                <div
+                  class="flex items-center gap-2 mr-5 bg-green-300 p-2 rounded-3xl"
+                >
+                  <i class="text-3xl fa-solid fa-circle-check"></i>
+                  <h4 class="text-3xl text-white">400</h4>
+                </div>
+
+                <div class="p-2 pr-5">
+                  <i class="text-3xl fa-regular fa-circle"></i>
+                </div>
+              </div>
+            </div>
+            <div
+              tabindex="0"
+              class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
+            >
+              <div class="card-body">
+                <span class="text-lg font-bold">8 Items</span>
+                <span class="text-info">Subtotal: $999</span>
+                <div class="card-actions">
+                  <button class="btn btn-primary btn-block">View cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown dropdown-end">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost btn-circle avatar"
+            ></div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li><a>Settings</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="mx-auto container p-6">
+      <div class="content grid grid-cols-12 gap-5">
+        <div class="col-span-9">
+          <!-- task header -->
+          <div class="grid grid-cols-12 gap-5">
+            <div
+              class="col-span-12 md:col-span-3 py-3 rounded-xl bg-[#F4F7FF] justify-center flex items-center gap-5"
+            >
+              <div>
+                <i class="text-green-400 text-3xl fa-solid fa-circle-check"></i>
+              </div>
+              <div>
+                <h5 class="text-4">Task Assigned </h5>
+                <h3 class="font-bold text-3xl">300</h3>
+              </div>
+            </div>
+            <div
+              class="col-span-12 md:col-span-6 rounded-xl flex gap-5 items-center pl-10 bg-gradient-to-r from-blue-500 to-cyan-500"
+            >
+              <div>
+                <img class="w-14" src="./assets/calender.png" alt="" />
+              </div>
+              <h5 class="text-2xl text-white leading-tight">
+                Discover Something <br />
+                New Today!
+              </h5>
+            </div>
+            <div
+              class="col-span-12 md:col-span-3 rounded-xl py-3 bg-[#F4F7FF] justify-center flex items-center gap-5"
+            >
+              <div><i class="text-3xl fa-regular fa-calendar-days"></i></div>
+              <div>
+                <h5 class="text-4">Wed , </h5>
+                <h3 class="font-bold text-xl">Jul 28 2025</h3>
+              </div>
+            </div>
+          </div>
+          <!-- task header end  -->
+
+          <!-- task list -->
+          <div class="tasks pt-5 md:grid grid-cols-3">
+            <div class="task bg-[#F4F7FF] col-span-1 p-5">
+              <div class="">
+                <span class="text-4 py-1 px-4 rounded-sm bg-[#ffff]"
+                  >ShopEase</span
+                >
+              </div>
+              <h4 class="text-xl py-3">Fix Mobile Button Issue</h4>
+              <div class="bg-[#ffff] p-2 rounded-xl">
+                <p>
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  and ensure onClick works properly
+                </p>
+              </div>
+              <div class="flex justify-between items-center pt-4">
+                <div>
+                  <span>Deadline</span>
+                  <h6>21 March 2025</h6>
+                </div>
+                <div>
+                  <button class="py-2 px-5 rounded-xl text-white bg-[#3752FD]">
+                    Complete
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-3 bg-red-300">
+          <h3>sidebar</h3>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
