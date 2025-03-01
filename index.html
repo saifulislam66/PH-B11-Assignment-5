@@ -37,7 +37,7 @@
                   class="flex items-center gap-2 mr-5 bg-[#F4F7FF] p-2 rounded-3xl"
                 >
                   <i class="text-3xl fa-solid fa-circle-check"></i>
-                  <h4 class="text-3xl">400</h4>
+                  <h4 id="gems" class="text-3xl">400</h4>
                 </div>
 
                 <div class="p-2 pr-5">
@@ -95,7 +95,7 @@
               </div>
               <div>
                 <h5 class="text-4">Task Assigned </h5>
-                <h3 class="font-bold text-3xl">300</h3>
+                <h3 id="count" class="font-bold text-3xl"></h3>
               </div>
             </div>
             <div
@@ -114,8 +114,8 @@
             >
               <div><i class="text-3xl fa-regular fa-calendar-days"></i></div>
               <div>
-                <h5 class="text-4">Wed , </h5>
-                <h3 class="font-bold text-xl">Jul 28 2025</h3>
+                <h5 id="day" class="text-4">Wed , </h5>
+                <h3 id="date" class="font-bold text-xl">Jul 28 2025</h3>
               </div>
             </div>
           </div>
@@ -129,7 +129,9 @@
                   >ShopEase</span
                 >
               </div>
-              <h4 class="text-xl py-3">Fix Mobile Button Issue</h4>
+              <h4 id="task-title" class="task-title text-xl py-3">
+                Fix 1 Mobile Button Issue
+              </h4>
               <div class="bg-[#ffff] p-2 rounded-xl">
                 <p class="">
                   Debug using Chrome DevTools, check for overlapping elements,
@@ -142,7 +144,10 @@
                   <h6 class="">21 March 2025</h6>
                 </div>
                 <div>
-                  <button class="py-2 px-5 rounded-xl text-white bg-[#3752FD]">
+                  <button
+                    id="Complete"
+                    class="py-2 Complete px-5 rounded-xl text-white bg-[#3752FD]"
+                  >
                     Complete
                   </button>
                 </div>
@@ -154,7 +159,38 @@
                   >ShopEase</span
                 >
               </div>
-              <h4 class="text-xl py-3">Fix Mobile Button Issue</h4>
+              <h4 id="task-title" class="task-title text-xl py-3">
+                Fix 2 Mobile Button Issue
+              </h4>
+              <div class="bg-[#ffff] p-2 rounded-xl">
+                <p class="">
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  and ensure onClick works properly
+                </p>
+              </div>
+              <div class="flex justify-between items-center pt-4">
+                <div>
+                  <span>Deadline</span>
+                  <h6 class="">21 March 2025</h6>
+                </div>
+                <div>
+                  <button
+                    id="Complete"
+                    class="py-2 Complete px-5 rounded-xl text-white bg-[#3752FD]"
+                  >
+                    Complete
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="task bg-[#F4F7FF] col-span-1 rounded-xl p-5">
+              <div class="">
+                <span class="text-4 py-1 px-4 rounded-sm bg-[#ffff]"
+                  >ShopEase</span
+                >
+              </div>
+              <h4 class="text-xl py-3 task-title">Fix 3 Mobile Button Issue</h4>
               <div class="bg-[#ffff] p-2 rounded-xl">
                 <p>
                   Debug using Chrome DevTools, check for overlapping elements,
@@ -167,7 +203,9 @@
                   <h6 class="">21 March 2025</h6>
                 </div>
                 <div>
-                  <button class="py-2 px-5 rounded-xl text-white bg-[#3752FD]">
+                  <button
+                    class="py-2 Complete px-5 rounded-xl text-white bg-[#3752FD]"
+                  >
                     Complete
                   </button>
                 </div>
@@ -179,7 +217,7 @@
                   >ShopEase</span
                 >
               </div>
-              <h4 class="text-xl py-3">Fix Mobile Button Issue</h4>
+              <h4 class="text-xl task-title py-3">Fix 4 Mobile Button Issue</h4>
               <div class="bg-[#ffff] p-2 rounded-xl">
                 <p>
                   Debug using Chrome DevTools, check for overlapping elements,
@@ -192,7 +230,9 @@
                   <h6 class="">21 March 2025</h6>
                 </div>
                 <div>
-                  <button class="py-2 px-5 rounded-xl text-white bg-[#3752FD]">
+                  <button
+                    class="py-2 Complete px-5 rounded-xl text-white bg-[#3752FD]"
+                  >
                     Complete
                   </button>
                 </div>
@@ -204,7 +244,7 @@
                   >ShopEase</span
                 >
               </div>
-              <h4 class="text-xl py-3">Fix Mobile Button Issue</h4>
+              <h4 class="text-xl task-title py-3">Fix 5 Mobile Button Issue</h4>
               <div class="bg-[#ffff] p-2 rounded-xl">
                 <p>
                   Debug using Chrome DevTools, check for overlapping elements,
@@ -217,7 +257,9 @@
                   <h6 class="">21 March 2025</h6>
                 </div>
                 <div>
-                  <button class="py-2 px-5 rounded-xl text-white bg-[#3752FD]">
+                  <button
+                    class="py-2 px-5 Complete rounded-xl text-white bg-[#3752FD]"
+                  >
                     Complete
                   </button>
                 </div>
@@ -229,7 +271,7 @@
                   >ShopEase</span
                 >
               </div>
-              <h4 class="text-xl py-3">Fix Mobile Button Issue</h4>
+              <h4 class="text-xl task-title py-3">Fix 6 Mobile Button Issue</h4>
               <div class="bg-[#ffff] p-2 rounded-xl">
                 <p>
                   Debug using Chrome DevTools, check for overlapping elements,
@@ -242,32 +284,9 @@
                   <h6 class="">21 March 2025</h6>
                 </div>
                 <div>
-                  <button class="py-2 px-5 rounded-xl text-white bg-[#3752FD]">
-                    Complete
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="task bg-[#F4F7FF] col-span-1 rounded-xl p-5">
-              <div class="">
-                <span class="text-4 py-1 px-4 rounded-sm bg-[#ffff]"
-                  >ShopEase</span
-                >
-              </div>
-              <h4 class="text-xl py-3">Fix Mobile Button Issue</h4>
-              <div class="bg-[#ffff] p-2 rounded-xl">
-                <p>
-                  Debug using Chrome DevTools, check for overlapping elements,
-                  and ensure onClick works properly
-                </p>
-              </div>
-              <div class="flex justify-between items-center pt-4">
-                <div>
-                  <span>Deadline</span>
-                  <h6 class="">21 March 2025</h6>
-                </div>
-                <div>
-                  <button class="py-2 px-5 rounded-xl text-white bg-[#3752FD]">
+                  <button
+                    class="py-2 Complete px-5 rounded-xl text-white bg-[#3752FD]"
+                  >
                     Complete
                   </button>
                 </div>
@@ -282,20 +301,24 @@
                 <span class="pr-5"><i class="fa-regular fa-bell"></i></span>
                 Activity Log
               </p>
-              <button class="py-2 mt-5 px-5 rounded-xl text-white bg-[#3752FD]">
+              <button
+                id="clear"
+                class="py-2 mt-5 px-5 rounded-xl text-white bg-[#3752FD]"
+              >
                 Clear History
               </button>
             </div>
           </div>
 
-          <div class="History mt-5">
-            <p class="p-5 bg-[#F4F7FF] rounded-xl text-4 mb-5">
+          <div id="History" class="History mt-5">
+            <!-- <p class="p-5 bg-[#F4F7FF] rounded-xl text-4 mb-5">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat,
               ullam vitae totam iusto alias debitis.
-            </p>
+            </p> -->
           </div>
         </div>
       </div>
     </main>
+    <script src="./js/app.js"></script>
   </body>
 </html>
