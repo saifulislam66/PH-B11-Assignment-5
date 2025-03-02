@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#F4F7FF]">
+     <nav class="container mx-auto">
+        <div class="navbar bg-[#ffff] rounded-xl">
+          <div class="flex-1">
+            <a class="btn btn-ghost text-xl">
+              <img class="w-10" src="./assets/logo.png" alt="" />
+              <h4 class="font-bold text-3xl">
+                <span class="font-normal">Dev</span>Board
+              </h4></a
+            >
+          </div>
+          <div class="flex gap-5">
+           
+            <button id="btn" class="btn bg-[#3752FD] text-white text-xl ">Go To Home</button>
+  
+             
+            </div>
+          </div>
+          </div>
+        </div>
+      </nav> 
+
+    <main>
+      <section class="blog mx-auto container min-h-screen">
+         <h1 class="text-center font-bold text-3xl my-5">Blog</h1>
+        
+         <!-- What is event bubbling in the DOM? -->
+        <div class="bg-[#ffff] mb-5 rounded-xl p-5">
+          <h2 class="text-3xl py-3">
+            What are the different ways to select an element in the DOM?
+          </h2>
+          <hr />
+
+          <p class="text-xl mt-3">
+            There are maney whays to select in the DOM. Here are the most common
+            methos are  getElementById(), querySelector() getElementsByClassName(), getElementsByTagName(), querySelectorAll(), getElementsByName()
+          </p>
+        </div>
+        <!-- What is the difference between innerHTML, innerText, and textContent ? -->
+        <div class="bg-[#ffff] mb-5 rounded-xl p-5">
+            <h2 class="text-3xl py-3">
+              What are the different ways to select an element in the DOM?
+            </h2>
+            <hr />
+  
+            <p class="text-xl mt-3">
+              innerHTML - innerHTML is  HTML inside an element 
+              <br>
+              innerText - innerText is visible text in HTML
+              <br>
+              textContent -  innerText is all visible text in HTML, including hidden content
+            </p>
+        </div>
+        <!-- What is event bubbling in the DOM? -->
+        <div class="bg-[#ffff] mb-5 rounded-xl p-5">
+          <h2 class="text-3xl py-3">
+            What are the different ways to select an element in the DOM?
+          </h2>
+          <hr />
+
+          <p class="text-xl mt-3">
+            Event bubbling is when an event starts at the target element and propagates up to its parent elements in the DOM.
+          </p>
+      </div>
+      <!-- How do you create, add, and remove elements using JavaScript? -->
+      <div class="bg-[#ffff] mb-5 rounded-xl p-5">
+        <h2 class="text-3xl py-3">
+          What are the different ways to select an element in the DOM?
+        </h2>
+        <hr />
+
+        <p class="text-xl mt-3">
+          Creating Elements - let newDiv = document.createElement("div");
+          <br>
+          newDiv.innerText = "Hello PH"; 
+          <br>
+           Adding -  document.body.appendChild(newDiv);
+            <br>
+             Removing - newDiv.remove(); 
+           
+        </p>
+    </div>
+       
+    </section>
+    </main>
+
+    <script>
+      document.getElementById("btn").addEventListener("click", function (){
+        window.location.href = "./index.html";
+      })
+    </script>
+  </body>
+</html>

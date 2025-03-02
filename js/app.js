@@ -15,21 +15,22 @@ const allTasks = tasks.length;
 let counter = allTasks;
 document.getElementById("count").innerText = allTasks;
 
-let gems = 100;
+let gems = 23;
 document.getElementById("gems").innerText = gems;
 
 // show all tasks items
 for (const task of tasks) {
   // click event add to complete button
   const completeButton = task.querySelector(".Complete");
-  // console.log(completeButton);
+
   if (completeButton) {
     completeButton.addEventListener("click", function () {
+      alert("Board Update Successfully");
       counter--;
       // counter
       document.getElementById("count").innerText = counter;
       // add gems
-      document.getElementById("gems").innerText = gems += 10;
+      document.getElementById("gems").innerText = gems += 1;
       this.style.background = "gray";
       this.disabled = true;
       const taskTitle = task.querySelector(".task-title").innerText;
@@ -42,9 +43,13 @@ for (const task of tasks) {
       // add history
       const history = document.getElementById("History");
 
-      const p = `<p class=" task-history p-5 bg-[#F4F7FF] rounded-xl text-4 mb-5">${taskTitle} ${currenTime}</p>`;
+      const p = `<p class=" task-history p-5 bg-[#F4F7FF] rounded-xl text-4 mb-5">You have complete this task ${taskTitle} at ${currenTime}</p>`;
 
       history.innerHTML += p;
+
+      if (history.innerHTML.length > 0) {
+        document.getElementById("bell").style.color = "red";
+      }
 
       if (counter === 0) {
         alert("Congratulations! You have completed all tasks");
@@ -53,8 +58,10 @@ for (const task of tasks) {
   }
 }
 
+// clear history
 document.getElementById("clear").addEventListener("click", function () {
   document.getElementById("History").innerHTML = "";
+  document.getElementById("bell").style.color = "";
   for (const task of tasks) {
     const completeButton = task.querySelector(".Complete");
     document.getElementById("count").innerText = allTasks;
@@ -72,4 +79,7 @@ function randomBgColor() {
   document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 }
 
-// Call function
+// blog page
+document.getElementById("blog").addEventListener("click", function () {
+  location.href = "blog.html";
+});
