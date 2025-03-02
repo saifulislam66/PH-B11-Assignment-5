@@ -68,6 +68,7 @@ document.getElementById("clear").addEventListener("click", function () {
     counter = allTasks;
     completeButton.style.background = "blue";
     completeButton.disabled = false;
+    document.getElementById("gems").innerText = 23;
   }
 });
 
