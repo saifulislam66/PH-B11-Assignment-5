@@ -18,9 +18,9 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="">
+  <body class="bg-[#F4F7FF]">
     <nav class="container mx-auto">
-      <div class="navbar bg-base-100">
+      <div class="navbar bg-[#ffff] rounded-xl">
         <div class="flex-1">
           <a class="btn btn-ghost text-xl">
             <img class="w-10" src="./assets/logo.png" alt="" />
@@ -29,62 +29,28 @@
             </h4></a
           >
         </div>
-        <div class="flex-none">
-          <div class="dropdown dropdown-end">
-            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-              <div class="indicator">
-                <div
-                  class="flex items-center gap-2 mr-5 bg-[#F4F7FF] p-2 rounded-3xl"
-                >
-                  <i class="text-3xl fa-solid fa-circle-check"></i>
-                  <h4 id="gems" class="text-3xl">400</h4>
-                </div>
+        <div class="flex gap-5">
+          <div
+            class="flex items-center gap-2 mr-5 bg-[#F4F7FF] p-2 rounded-3xl"
+          >
+            <i class="text-3xl fa-solid fa-circle-check"></i>
+            <h4 id="gems" class="text-3xl">400</h4>
+          </div>
 
-                <div class="p-2 pr-5">
-                  <i class="text-3xl fa-regular fa-circle"></i>
-                </div>
-              </div>
+          <div class="p-2 pr-5">
+            <div class="cursor-pointer	" onclick="randomBgColor();">
+              <img src="./assets/Group 9.png" alt="">
             </div>
-            <div
-              tabindex="0"
-              class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
-            >
-              <div class="card-body">
-                <span class="text-lg font-bold">8 Items</span>
-                <span class="text-info">Subtotal: $999</span>
-                <div class="card-actions">
-                  <button class="btn btn-primary btn-block">View cart</button>
-                </div>
-              </div>
-            </div>
+           
           </div>
-          <div class="dropdown dropdown-end">
-            <div
-              tabindex="0"
-              role="button"
-              class="btn btn-ghost btn-circle avatar"
-            ></div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-            >
-              <li>
-                <a class="justify-between">
-                  Profile
-                  <span class="badge">New</span>
-                </a>
-              </li>
-              <li><a>Settings</a></li>
-              <li><a>Logout</a></li>
-            </ul>
-          </div>
+        </div>
         </div>
       </div>
     </nav>
 
-    <main class="mx-auto container p-6">
+    <main class="mx-auto container pt-5">
       <div class="content grid gird-cols-1 md:grid-cols-12 gap-5">
-        <div class="md:col-span-9">
+        <div class=" bg-[#ffff] p-5 rounded-xl md:col-span-9">
           <!-- task header -->
           <div class="grid grid-cols-12 gap-5">
             <div
@@ -122,7 +88,7 @@
           <!-- task header end  -->
 
           <!-- task list -->
-          <div class="tasks pt-5 grid gird-cols-1 md:grid-cols-3 gap-5">
+          <div class="tasks  pt-5 grid gird-cols-1 md:grid-cols-3 gap-5">
             <div class="task bg-[#F4F7FF] col-span-1 rounded-xl p-5">
               <div class="">
                 <span class="text-4 py-1 px-4 rounded-sm bg-[#ffff]"
@@ -294,7 +260,7 @@
             </div>
           </div>
         </div>
-        <div class="md:col-span-3 d-none">
+        <div class="md:col-span-3 p-5 bg-[#ffff] rounded-xl d-none">
           <div>
             <div class="text-center">
               <p class="text-2xl">
@@ -311,10 +277,7 @@
           </div>
 
           <div id="History" class="History mt-5">
-            <!-- <p class="p-5 bg-[#F4F7FF] rounded-xl text-4 mb-5">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat,
-              ullam vitae totam iusto alias debitis.
-            </p> -->
+            
           </div>
         </div>
       </div>

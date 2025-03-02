@@ -34,12 +34,21 @@ for (const task of tasks) {
       this.disabled = true;
       const taskTitle = task.querySelector(".task-title").innerText;
 
+      // current time
+
+      const options = { hour: "2-digit", minute: "2-digit" };
+      let currenTime = new Date().toLocaleTimeString("en-US", options);
+
       // add history
       const history = document.getElementById("History");
 
-      const p = `<p class=" task-history p-5 bg-[#F4F7FF] rounded-xl text-4 mb-5">${taskTitle}</p>`;
+      const p = `<p class=" task-history p-5 bg-[#F4F7FF] rounded-xl text-4 mb-5">${taskTitle} ${currenTime}</p>`;
 
       history.innerHTML += p;
+
+      if (counter === 0) {
+        alert("Congratulations! You have completed all tasks");
+      }
     });
   }
 }
@@ -48,7 +57,19 @@ document.getElementById("clear").addEventListener("click", function () {
   document.getElementById("History").innerHTML = "";
   for (const task of tasks) {
     const completeButton = task.querySelector(".Complete");
+    document.getElementById("count").innerText = allTasks;
+    counter = allTasks;
     completeButton.style.background = "blue";
     completeButton.disabled = false;
   }
 });
+
+function randomBgColor() {
+  let r = Math.floor(Math.random() * 256);
+  let g = Math.floor(Math.random() * 256);
+  let b = Math.floor(Math.random() * 256);
+
+  document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+}
+
+// Call function
